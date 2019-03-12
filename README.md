@@ -1,6 +1,6 @@
 # {Application Name}
 
-#### _Front End Development/Intro to Programming, Week{...-Project}, {Date of current version}_
+#### _Front End Development/JavaScript, Week{...-Project}, {Date of current version}_
 
 #### By _**Randee Layosa**_
 
@@ -89,8 +89,11 @@ _<h4 align="center">Desktop</h4>_
 ## Technologies Used
 
 * _Sketch_
-* _Webpack_
 * _Sass_
+* _Webpack_
+* _Jasmine_
+* _Karma_
+* _JavaScript (ES6)_
 
 ### Legal
 

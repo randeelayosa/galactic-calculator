@@ -93,6 +93,7 @@ _<h4 align="center">Desktop</h4>_
 * _Webpack_
 * _Jasmine_
 * _Karma_
+* _Babel_
 * _JavaScript (ES6)_
 
 ### Legal

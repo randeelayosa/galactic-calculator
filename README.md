@@ -1,6 +1,7 @@
 ## Planning
 
 1. Configuration/Dependencies
+
   | Configuration/Dependencies | Use |
 | :-------------     | :------------- | :------------- |
 | Babel-Core, Babel-Loader, Babel-preset-es2015 | compiles JavaScript for compatibility with different browsers |
@@ -14,6 +15,7 @@
 | Webpack, Webpack-CLI, Webpack-Dev-Server | bundles/compiles code |
 
 2. Specs
+
   | Description | Input | Output |
 | :-------------     | :------------- | :------------- |
 | Program blocks non-numerical input | g | Invalid input |

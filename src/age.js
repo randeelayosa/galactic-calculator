@@ -11,45 +11,85 @@ export function letRun(year) {
   }
 }
 
-export function ageEarth(dob) {
+export function calcAge(birthday) {
   const today = new Date();
-  const currYear = today.getFullYear();
-  const age = currYear - dob;
+  const birthDate = new Date(birthday);
+  let age = today.getFullYear() - birthDate.getFullYear();
+  let m = today.getMonth() - birthDate.getMonth();
+  if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+      age--;
+  }
   return age;
 }
 
-export function ageMercury(age){
-  let mercury = (age / .24).toFixed(2);
-  return mercury;
+// export function ageArr(calcPlanets) {
+//   this.ages = [];
+// }
+
+export function calcPlanets(age){
+  const earth = age;
+  console.log(earth);
+  const mercury = (earth / .24).toFixed(2);
+  console.log(mercury);
+  const venus = (earth / .62).toFixed(2);
+  console.log(venus);
+  const mars = (earth / 1.88).toFixed(2);
+  console.log(mars);
+  const jupiter = (earth / 11.86).toFixed(2);
+  console.log(jupiter);
+  const planets = [mercury, venus, mars, jupiter];
+  // planets.forEach(function(planet){
+  //   append("You are" + planet + "years old!");
+  // })
+  console.log(planets);
+  return planets;
 }
+//ADDED BIRTHDAY FUNCTION AND PLANET CALC AGE.
 
-export function ageVenus(age){
-  let venus = (age / .62).toFixed(2);
-  return venus;
-}
+// export function calcLife(planets){
+//   const expect = 79;
+//   const alive = planets;
+//   const earthLife = (expect - earth);
+//   console.log(earthLife);
+//   const mercLife = ((expect / .24)-mercury);
+//   console.log(mercLife);
+//   const venLife = ((expect / .24)-venus);
+//   const marsLife = ((expect / .24)-mars);
+//   const jupLife = ((expect / .24)-jupiter);
+//   const living = [earthLife, mercLife, venLife, marsLife, jupLife];
+//   return living;
+// }
 
-export function ageMars(age){
-  let mars = (age / 1.88).toFixed(2);
-  return mars;
-}
 
-export function ageJupiter(age){
-  let jupiter = (age / 11.86).toFixed(2);
-  return jupiter;
-}
 
-class Ages function (){
-  constructor (a, b){
-    this.a = a;
-    this.b = b;
-    return a / b;
-  }
 
-  mercury(){
-    this.mercury = 
-  }
+// export function ageVenus(age){
+//   const venus = (age / .62).toFixed(2);
+//   return venus;
+// }
+//
+// export function ageMars(age){
+//   const mars = (age / 1.88).toFixed(2);
+//   return mars;
+// }
+//
+// export function ageJupiter(age){
+//   const jupiter = (age / 11.86).toFixed(2);
+//   return jupiter;
+// }
 
-}
+// class Ages function (){
+//   constructor (a, b){
+//     this.a = a;
+//     this.b = b;
+//     return a / b;
+//   }
+//
+//   mercury(){
+//     this.mercury =
+//   }
+//
+// }
 
 
 //

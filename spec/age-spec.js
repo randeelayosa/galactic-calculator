@@ -1,4 +1,4 @@
-import { letRun, ageEarth, ageMercury, ageVenus, ageMars, ageJupiter } from './../src/age.js';
+import { letRun, calcAge, calcPlanets } from './../src/age.js';
 
 describe('letRun', function() {
 
@@ -8,7 +8,7 @@ describe('letRun', function() {
   });
 
   it('should pass if user inputs a valid date', function() {
-    const ran = letRun('2019');
+    const ran = letRun('age19');
     expect(ran).toEqual(true);
   });
 
@@ -19,47 +19,35 @@ describe('letRun', function() {
 
 });
 
-describe ('ageEarth', function() {
+describe ('calcAge', function() {
 
-  it("should return user's age on Earth", function() {
-    let age = ageEarth('1999');
+  it("should return user's brithday", function() {
+    let age = calcAge('03/14/1999');
     expect(age).toEqual(20);
   });
 
 });
 
-describe ('ageMercury', function() {
+describe ('calcPlanets', function() {
 
-  it("should return user's age on Mercury", function() {
-    let mercury = ageMercury('20');
-    expect(mercury).toEqual(83.33);
+  it("should the user's age on mercury", function() {
+    let planets = calcPlanets(20);
+    expect(planets[0]).toEqual("83.33");
   });
 
-});
-
-describe ('ageVenus', function() {
-
-  it("should return user's age on Venus", function() {
-    let venus = ageVenus('20');
-    expect(venus).toEqual(32.25);
+  it("should the user's age on venus", function() {
+    let planets = calcPlanets(20);
+    expect(planets[1]).toEqual("32.26");
   });
 
-});
-
-describe ('ageMars', function() {
-
-  it("should return user's age on Mars", function() {
-    let mars = ageMars('20');
-    expect(mars).toEqual(10.64);
+  it("should the user's age on mars", function() {
+    let planets = calcPlanets(20);
+    expect(planets[2]).toEqual("10.64");
   });
 
-});
-
-describe ('ageJupiter', function() {
-
-  it("should return user's age on Jupiter", function() {
-    let jupiter = ageJupiter('20');
-    expect(jupiter).toEqual(1.69);
+  it("should the user's age on jupiter", function() {
+    let planets = calcPlanets(20);
+    expect(planets[3]).toEqual("1.69");
   });
 
 });

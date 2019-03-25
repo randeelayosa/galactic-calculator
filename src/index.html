@@ -1,15 +1,30 @@
 <html>
   <head>
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <form id="age" action="index.html" method="post">
-      <label for="year">Enter your birthday:</label>
-      <input type="date" id="birthday">
-      <button type="submit" name="button">Calculate Galactic Ages</button>
-    </form>
-    <div class="output">
-
+    <div class="container">
+      <h1>Galactic Age Calculator</h1>
+      <div class="userInput">
+        <form id="age">
+          <label for="year">Enter your birthday:</label>
+          <input type="date" id="birthday">
+          <button type="submit" class="calc" name="button">Calculate Galactic Ages</button>
+        </form>
+      </div>
+      <div class="outputContainer">
+        <div class="output">
+          <div class="earthOutput"></div>
+          <div class="mercuryOutput"></div>
+          <div class="venusOutput"></div>
+          <div class="marsOutput"></div>
+          <div class="jupiterOutput"></div>
+        </div>
+        <div class="refresh">
+          <input class="refreshButton" type="button" value="Enter another birthdate" onclick="location.reload();" />
+        </div>
+      </div>
     </div>
   </body>
 </html>

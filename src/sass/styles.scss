@@ -1,3 +1,93 @@
+*{
+  font-family: 'Space Mono', monospace;
+}
+
 body {
-  background-color: #f2f2f2;
+  // background-image: url('../assets/img/nasa.jpg');
+  // background-size: cover;
+  background-color: black;
+  color: white;
+  // cursor: url('../assets/img/rocket.png'), auto;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+}
+
+h1{
+  text-align: center;
+  width: 100%;
+  height: auto;
+  text-decoration: underline;
+  font-size: 3em;
+}
+
+.userInput{
+  #age {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8%;
+    input{
+      margin: 3% 0;
+    }
+    .calc{
+      background-color: transparent;
+      border: 1px solid limegreen;
+      color: limegreen;
+      cursor: pointer
+    }
+  }
+}
+
+.outputContainer{
+  display: none;
+  .output{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    width: 100%;
+    .earthOutput{
+      width: (92%/2);
+      height: auto;
+      padding: 2%;
+    }
+    .mercuryOutput{
+      width: (92%/2);
+      height: auto;
+      padding: 2%;
+    }
+    .venusOutput{
+      width: (92%/2);
+      height: auto;
+      padding: 2%;
+    }
+    .marsOutput{
+      width: (92%/2);
+      height: auto;
+      padding: 2%;
+    }
+    .jupiterOutput{
+      width: (92%/2);
+      height: auto;
+      padding: 2%;
+    }
+  }
+  .refresh{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    .refreshButton{
+      text-align: center;
+      background-color: transparent;
+      border: 1px solid limegreen;
+      color: limegreen;
+      width: auto;
+      cursor: pointer;
+    }
+  }
 }

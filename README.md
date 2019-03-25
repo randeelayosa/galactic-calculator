@@ -10,7 +10,7 @@
 
 ## Description
 
-_This program demonstrates an understanding of ES6 features (`import`, `export`, `class`, `extends`, `let`, `const`) to create a calculator capable of computing a User's inputted age as it corresponds to the revolutions around the sun of different planets. This app also utilizes Webpack configurations and dependencies to meet industry standard practices and achieve minimal sized code files._
+_This program demonstrates an understanding of ES6 features (`import`, `export`, `class`, `let`, `const`) to create a calculator capable of computing a User's inputted age as it corresponds to the revolutions around the sun of different planets. This app also utilizes Webpack configurations and dependencies to meet industry standard practices and achieve minimal sized code files._
 
 ## Technologies Used
 

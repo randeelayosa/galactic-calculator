@@ -50,6 +50,31 @@ describe ('calcPlanets', function() {
     expect(planets[3]).toEqual("1.69");
   });
 
+  it("should the user's amount of life left on earth", function() {
+    let planets = calcPlanets(20);
+    expect(planets[4]).toEqual(59);
+  });
+
+  it("should the user's amount of life left on mercury", function() {
+    let planets = calcPlanets(20);
+    expect(planets[5]).toEqual("244.67");
+  });
+
+  it("should the user's amount of life left on venus", function() {
+    let planets = calcPlanets(20);
+    expect(planets[6]).toEqual("96.14");
+  });
+
+  it("should the user's amount of life left on mars", function() {
+    let planets = calcPlanets(20);
+    expect(planets[7]).toEqual("31.36");
+  });
+
+  it("should the user's amount of life left on jupiter", function() {
+    let planets = calcPlanets(20);
+    expect(planets[8]).toEqual("4.96");
+  });
+
 });
 
 
